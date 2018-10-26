@@ -97,7 +97,9 @@ public class ATMCardSessionBean implements ATMCardSessionBeanRemote, ATMCardSess
         Query query = em.createQuery("SELECT c FROM AtmCardEntity c WHERE c.cardNumber = :inCardNumber");
         query.setParameter("inCardNumber", cardNum);
         try {
-            return (AtmCardEntity)query.getSingleResult();
+            AtmCardEntity atmCardEntity = (AtmCardEntity)query.getSingleResult();
+            atmCardEntity.getDepositAccounts().size();
+            return atmCardEntity;
         }
         catch (NoResultException | NonUniqueResultException ex) {
             throw new AtmCardNotFoundException("Atm Card Card Number " + cardNum + " does not exist!");
