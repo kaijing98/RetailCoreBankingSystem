@@ -6,14 +6,14 @@ ii) multiple retail banking applications to support the business operation of th
 
 The current version is able to 
 1) create new customer
-• For a new customer, teller needs to create a new customer record first before performing any other business activities. 
-• Each customer should be uniquely identified with one customer record.
+- For a new customer, teller needs to create a new customer record first before performing any other business activities. 
+- Each customer should be uniquely identified with one customer record.
 
 2) open deposit account
-• Teller opens a new deposit account for an existing customer.
-• A customer can have multiple deposit accounts of different types.
-• For this phase, only savings account is required.
-• For this phase, you may assume that there is only individual account, i.e., customers cannot open a joint account.
+- Teller opens a new deposit account for an existing customer.
+- A customer can have multiple deposit accounts of different types.
+- For this phase, only savings account is required.
+- For this phase, you may assume that there is only individual account, i.e., customers cannot open a joint account.
 
 3) issue new and replacement ATM
 • Teller issue a new or replacement ATM card to customer.
